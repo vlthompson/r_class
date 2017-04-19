@@ -1,0 +1,31 @@
+---
+title: "Orange Tree Circumference"
+author: "Veronica"
+date: "4/18/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Background
+Tree size has been shown to influence fruit yeild in citrus. This preliminary study tracks orange tree circumference over four years for future correlation to fruit yeild.
+
+## Orange Growth data
+```{r}
+summary(Orange)
+```
+
+
+```{r}
+library(ggplot2)
+p <- ggplot(Orange, aes(age, circumference, color=Tree))
+p + geom_jitter() 
+```
+
+#Future Reading
+[Citrus scion and rootstock, topping height, and tree spacing affect tree size, yield, fruit quality, and economic return](http://journal.ashspublications.org/content/120/5/861.full.pdf)
+
+[Estimation of citrus fruit yield using ultrasonically-sensed tree size](http://128.227.177.113/pa/Publications/Zaman_Schumann_Hostler_2006.pdf)
+
+
