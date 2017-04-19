@@ -18,12 +18,12 @@ summary(Orange)
 
 
 ```{r}
-library(ggplot2)
 p <- ggplot(Orange, aes(age, circumference, color=Tree))
 p + geom_jitter() 
 ```
 
-#Future Reading
+##Future Reading
+
 [Citrus scion and rootstock, topping height, and tree spacing affect tree size, yield, fruit quality, and economic return](http://journal.ashspublications.org/content/120/5/861.full.pdf)
 
 [Estimation of citrus fruit yield using ultrasonically-sensed tree size](http://128.227.177.113/pa/Publications/Zaman_Schumann_Hostler_2006.pdf)
